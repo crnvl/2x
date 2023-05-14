@@ -12,14 +12,14 @@ export default function Home() {
       const first_half = words[i].slice(0, ptr);
       const second_half = words[i].slice(ptr, words[i].length);
 
-      words[i] = '<b>' + first_half + '</b>' + second_half;
+      words[i] = "<b>" + first_half + "</b>" + second_half;
     }
     setText(words.join(" "));
   }
 
   return (
     <>
-      <div className="bg-white min-h-screen h-full w-screen text-black">
+      <div className="bg-white min-h-screen h-full w-full text-black">
         <h1 className="text-9xl text-center font-bold pt-12">2x</h1>
         <div className="flex justify-center items-center mt-12">
           <input
@@ -30,8 +30,13 @@ export default function Home() {
             onChange={(e) => parseText(e.target.value)}
           />
         </div>
-        <div className="flex p-8 text-left">
-          <div dangerouslySetInnerHTML={{__html: text}} className="pt-8"></div>
+        <div className="flex justify-center w-full">
+          <div className="flex text-left max-w-3xl">
+            <div
+              dangerouslySetInnerHTML={{ __html: text }}
+              className="pt-8"
+            ></div>
+          </div>
         </div>
       </div>
     </>
