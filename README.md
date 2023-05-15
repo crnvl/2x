@@ -24,3 +24,6 @@ docker run -d -p 3000:3000 ghcr.io/angelsflyinhell/2x:latest
 If you want to contribute to this project, feel free to open a pull request or an issue. If you have any questions, you can contact me on [Twitter](https://twitter.com/angelsflyinhell) or on Discord: angelsflyinhell#2077.
 
 ## Built with
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Docker](https://www.docker.com/)
