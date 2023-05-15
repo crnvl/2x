@@ -19,19 +19,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-white min-h-screen h-full w-full text-black">
+      <div className="bg-white min-h-screen h-full w-full text-black p-8">
         <h1 className="text-9xl text-center font-bold pt-12">2x</h1>
         <div className="flex justify-center items-center mt-12">
           <input
-            className="h-12 border-2 border-gray-100 rounded-lg text-center text-2xl"
+            className="h-12 w-full max-w-lg border-2 border-gray-100 rounded-lg text-center text-2xl"
             type="text"
             placeholder="paste text here"
             id="input"
             onChange={(e) => parseText(e.target.value)}
           />
         </div>
-        <div className="flex justify-center w-full">
-          <div className="flex text-left max-w-3xl">
+        <div className="flex justify-center">
+          <div className="flex text-left max-w-xl">
             <div
               dangerouslySetInnerHTML={{ __html: text }}
               className="pt-8"
